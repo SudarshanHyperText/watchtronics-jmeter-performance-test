@@ -7,8 +7,7 @@ This project contains a performance testing suite for the Watchtronics e-commerc
 
 ## Test Scenarios
 - GET Homepage `/`
-- GET Product Listing `/products`
-- GET Product Detail `/product/1`
+- Only the homepage (`/`) was tested in this project because other routes like `/products`, `/cart`, etc., returned 404 errors. This happens because the site uses   client-side routing (React Router), and direct access to those paths is not handled by Netlify without a custom `_redirects` file.
 
 ## Load Simulated
 - 50 Concurrent Users
